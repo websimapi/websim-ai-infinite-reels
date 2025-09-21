@@ -45,6 +45,41 @@ const Feed = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return /* @__PURE__ */ jsxDEV("div", { className: "feed", children: [
+    loading && items.length === 0 && /* @__PURE__ */ jsxDEV("div", { className: "loading-overlay", role: "status", "aria-live": "polite", children: /* @__PURE__ */ jsxDEV("div", { className: "loading-box", children: /* @__PURE__ */ jsxDEV("div", { className: "loading-row", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "spinner" }, void 0, false, {
+        fileName: "<stdin>",
+        lineNumber: 57,
+        columnNumber: 15
+      }),
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("div", { style: { fontWeight: 800 }, children: "AI is creating your feed" }, void 0, false, {
+          fileName: "<stdin>",
+          lineNumber: 59,
+          columnNumber: 17
+        }),
+        /* @__PURE__ */ jsxDEV("div", { style: { opacity: 0.8, fontSize: 13 }, children: "Writing scripts, narrating, and composing\u2026" }, void 0, false, {
+          fileName: "<stdin>",
+          lineNumber: 60,
+          columnNumber: 17
+        })
+      ] }, void 0, true, {
+        fileName: "<stdin>",
+        lineNumber: 58,
+        columnNumber: 15
+      })
+    ] }, void 0, true, {
+      fileName: "<stdin>",
+      lineNumber: 56,
+      columnNumber: 13
+    }) }, void 0, false, {
+      fileName: "<stdin>",
+      lineNumber: 55,
+      columnNumber: 11
+    }) }, void 0, false, {
+      fileName: "<stdin>",
+      lineNumber: 54,
+      columnNumber: 9
+    }),
     items.map((it) => /* @__PURE__ */ jsxDEV("div", { className: "reel", children: [
       /* @__PURE__ */ jsxDEV(
         Player,
@@ -72,7 +107,7 @@ const Feed = () => {
         false,
         {
           fileName: "<stdin>",
-          lineNumber: 55,
+          lineNumber: 68,
           columnNumber: 11
         }
       ),
@@ -80,7 +115,7 @@ const Feed = () => {
         /* @__PURE__ */ jsxDEV("div", { className: "meta-left", children: [
           /* @__PURE__ */ jsxDEV("img", { className: "avatar", src: it.authorAvatar, alt: "" }, void 0, false, {
             fileName: "<stdin>",
-            lineNumber: 78,
+            lineNumber: 91,
             columnNumber: 15
           }),
           /* @__PURE__ */ jsxDEV("div", { className: "caption", children: [
@@ -89,42 +124,42 @@ const Feed = () => {
               it.author
             ] }, void 0, true, {
               fileName: "<stdin>",
-              lineNumber: 80,
+              lineNumber: 93,
               columnNumber: 17
             }),
             /* @__PURE__ */ jsxDEV("div", { style: { opacity: 0.8 }, children: it.title }, void 0, false, {
               fileName: "<stdin>",
-              lineNumber: 81,
+              lineNumber: 94,
               columnNumber: 17
             })
           ] }, void 0, true, {
             fileName: "<stdin>",
-            lineNumber: 79,
+            lineNumber: 92,
             columnNumber: 15
           })
         ] }, void 0, true, {
           fileName: "<stdin>",
-          lineNumber: 77,
+          lineNumber: 90,
           columnNumber: 13
         }),
         /* @__PURE__ */ jsxDEV("button", { className: "btn", onClick: () => share(it), children: "Share" }, void 0, false, {
           fileName: "<stdin>",
-          lineNumber: 84,
+          lineNumber: 97,
           columnNumber: 13
         })
       ] }, void 0, true, {
         fileName: "<stdin>",
-        lineNumber: 76,
+        lineNumber: 89,
         columnNumber: 11
       })
     ] }, it.id, true, {
       fileName: "<stdin>",
-      lineNumber: 54,
+      lineNumber: 67,
       columnNumber: 9
     })),
     loading && /* @__PURE__ */ jsxDEV("div", { className: "loading", children: "Generating more reels\u2026" }, void 0, false, {
       fileName: "<stdin>",
-      lineNumber: 88,
+      lineNumber: 101,
       columnNumber: 19
     })
   ] }, void 0, true, {
