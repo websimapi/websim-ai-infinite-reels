@@ -91,15 +91,9 @@ const Feed = () => {
           compositionHeight: 960,
           loop: true,
           controls: false,
+          muted: true,
           inputProps: it,
           style: { width: "100%", height: "100%" },
-          ref: (ref) => {
-            if (!ref) return;
-            const node = ref?.shadowRoot?.querySelector("video") || ref;
-            if (node) {
-              node.setAttribute("data-player", "1");
-            }
-          },
           autoplay: true,
           clickToPlay: true
         },
@@ -115,7 +109,7 @@ const Feed = () => {
         /* @__PURE__ */ jsxDEV("div", { className: "meta-left", children: [
           /* @__PURE__ */ jsxDEV("img", { className: "avatar", src: it.authorAvatar, alt: "" }, void 0, false, {
             fileName: "<stdin>",
-            lineNumber: 91,
+            lineNumber: 84,
             columnNumber: 15
           }),
           /* @__PURE__ */ jsxDEV("div", { className: "caption", children: [
@@ -124,32 +118,32 @@ const Feed = () => {
               it.author
             ] }, void 0, true, {
               fileName: "<stdin>",
-              lineNumber: 93,
+              lineNumber: 86,
               columnNumber: 17
             }),
             /* @__PURE__ */ jsxDEV("div", { style: { opacity: 0.8 }, children: it.title }, void 0, false, {
               fileName: "<stdin>",
-              lineNumber: 94,
+              lineNumber: 87,
               columnNumber: 17
             })
           ] }, void 0, true, {
             fileName: "<stdin>",
-            lineNumber: 92,
+            lineNumber: 85,
             columnNumber: 15
           })
         ] }, void 0, true, {
           fileName: "<stdin>",
-          lineNumber: 90,
+          lineNumber: 83,
           columnNumber: 13
         }),
         /* @__PURE__ */ jsxDEV("button", { className: "btn", onClick: () => share(it), children: "Share" }, void 0, false, {
           fileName: "<stdin>",
-          lineNumber: 97,
+          lineNumber: 90,
           columnNumber: 13
         })
       ] }, void 0, true, {
         fileName: "<stdin>",
-        lineNumber: 89,
+        lineNumber: 82,
         columnNumber: 11
       })
     ] }, it.id, true, {
@@ -159,7 +153,7 @@ const Feed = () => {
     })),
     loading && /* @__PURE__ */ jsxDEV("div", { className: "loading", children: "Generating more reels\u2026" }, void 0, false, {
       fileName: "<stdin>",
-      lineNumber: 101,
+      lineNumber: 94,
       columnNumber: 19
     })
   ] }, void 0, true, {
